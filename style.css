@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+*{
+    font-size: large;
+    font-family: 'Edu SA Beginner', cursive;    
+    font-weight: 300;
+}
+.editt{
+    display: flex;
+    width: 250px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-align: center;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.myy{
+    display: flex;
+    width: full;
+    height: max-content;
+    /* flex-direction: column; */
+    justify-content: center; 
+}
+
+.mybutton1{
+    width: 250px;
+    margin-top: 25px;
+    background-color: rgba(235, 44, 15, 0.679);;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-color: rgba(235, 44, 15, 0.679);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    
+}
+.mybutton1:hover{
+    color: rgba(235, 44, 15, 0.679);
+    background-color: white;
+    transition: all;
+    animation-duration: 500;
+}
+/* .mybutton1:click{
+    border-color: white;
+} */
+.heads{
+    font-family: 'Edu SA Beginner', cursive;    
+    font-weight: 800;
+}
+
+.heading{
+    text-align: center;
+}
+
+.fbox{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+}
+
+.dish{
+    color: aliceblue;
+    border-radius: 6%;
+    padding: 0.5rem;
+    background-color: rgba(235, 44, 15, 0.679);
+}
+
+.explaination{
+    padding-left: 2%;
+}
+
+#bazaar{
+    display: flex;
+    gap: 1rem;
+}
+
+/* Add a flex container to the #bazaar element */
+#bazaar {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of stalls to multiple lines */
+    overflow-x: auto; /* Enable horizontal scrolling when stalls exceed the screen width */
+  }
+  
+  /* Adjust the width of the stalls to fit within the screen size */
+  .stalls {
+    flex: 0 0 calc(100% - 20px); /* Set the width for each stall, accounting for the gap */
+    max-width: calc(30% - 20px);
+    margin-right: 20px; /* Add spacing between stalls */
+  }
+  
+  /* Hide the scrollbar and show it only when needed */
+  #bazaar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Optional: Add custom scrollbar styling (only supported by some browsers) */
+  #bazaar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+
+.stallHead{
+    padding-left: 10%;
+}
+
+.milk{
+    background-color: rgba(255, 255, 0, 0.356);
+}
+.lassi{
+    background-color: whitesmoke;
+}
+
+.roti{
+    background-color: rgba(103, 12, 12, 0.3);
+}
+
+.pratha{
+    background-color: rgba(0, 128, 0, 0.456);
+}
+
+.friedrice{
+    background-color: rgba(255, 166, 0, 0.574);
+}
+
+.idli{
+    background-color: rgba(181, 181, 212, 0.481);
+}
+
+.dal{
+    background-color: pink;
+}
+
+#scoreCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+.cookingRed{
+    background-color: rgba(255, 0, 0, 0.693);
+}
+
+.cookingRed>h5{
+    display: inline-block;
+}
+
+#cook{
+    margin-left: 5%;
+    border-radius: 30%;
+    width: 2rem;
+}
+
+@media (max-width: 767px) {
+    .fbox {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #bazaar{
+        flex-direction: column;
+    }
+  
+    .stalls {
+        margin-left: 21%;
+        width: 100%;
+    }
+  
+    .stallHead {
+      padding-left: 0;
+      text-align: center;
+    }
+}
+.active1{
+   background-color: #2C5F2D;
+}

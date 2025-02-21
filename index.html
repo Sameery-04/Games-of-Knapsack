@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/surpriseSneha/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Boho</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akebono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="heading heads" style="background-color: rgba(255, 0, 0, 0.237);">Food Bazaar</h1>
+    <hr />
+
+    <div class="explaination">
+        <h3 class="heads">Game Introduction:</h3>
+        <ul>
+          <li>
+            You enter the food section and you are confused on what to eat
+          </li>
+          <li>
+            You see all the stalls there and go on to use your brain to get the "best meal" in budget
+          </li>
+          <li>
+            Every stall has the same dishes, the number mentioned with each item refers to their "hunger points"
+          </li>
+          <li>
+            Hunger Points: It means how full you feel after having that specific food item, the hunger points for a food item is constant for all stalls
+          </li>
+          <li>Each stall has its menu and You have a budget of "1000 rupee"</li>
+          <li>
+            Your motive is to have the maximum stomach points, what all do you eat at each stall?
+          </li>
+          <li>
+            You win if you had the most optimal meal in terms of hunger points
+          </li>
+          <li>
+            Note: You cant buy the same dish from the same stall again, try new stuff
+          </li>
+        </ul>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+    <div class="stomachPoints">
+      <div class="fbox">
+        <div class="dish">Milk: <span id="point1"></span></div>
+        <div class="dish">Lassi: <span id="point2"></span></div>
+        <div class="dish">Roti: <span id="point3"></span></div>
+        <div class="dish">Pratha: <span id="point4"></span></div>
+        <div class="dish">Fried Rice: <span id="point5"></span></div>
+        <div class="dish">Idli: <span id="point6"></span></div>
+        <div class="dish">Dal: <span id="point7"></span></div>
+      </div>
+    </div>
+
+    <hr />
+    <br />
+
+    <!-- make this a flex too -->
+    <div id="bazaar">
+      <div class="stalls" id="stall1">
+        <div class="card" style="width: 18rem">
+          <h3 class="stallHead heads">Stall 1</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item milk">Milk: <span class="item1"></span></li>
+            <li class="list-group-item lassi">Lassi: <span class="item2"></span></li>
+            <li class="list-group-item roti">Roti: <span class="item3"></span></li>
+            <li class="list-group-item pratha">Pratha: <span class="item4"></span></li>
+            <li class="list-group-item friedrice">Fried Rice: <span class="item5"></span></li>
+            <li class="list-group-item idli">Idli: <span class="item6"></span></li>
+            <li class="list-group-item dal">Dal: <span class="item7"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="stalls" id="stall2">
+        <div class="card" style="width: 18rem">
+          <h3 class="stallHead heads">Stall 2</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item milk">Milk: <span class="item1"></span></li>
+            <li class="list-group-item lassi">Lassi: <span class="item2"></span></li>
+            <li class="list-group-item roti">Roti: <span class="item3"></span></li>
+            <li class="list-group-item pratha">Pratha: <span class="item4"></span></li>
+            <li class="list-group-item friedrice">Fried Rice: <span class="item5"></span></li>
+            <li class="list-group-item idli">Idli: <span class="item6"></span></li>
+            <li class="list-group-item dal">Dal: <span class="item7"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="stalls" id="stall3">
+        <div class="card" style="width: 18rem">
+          <h3 class="stallHead heads">Stall 3</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item milk">Milk: <span class="item1"></span></li>
+            <li class="list-group-item lassi">Lassi: <span class="item2"></span></li>
+            <li class="list-group-item roti">Roti: <span class="item3"></span></li>
+            <li class="list-group-item pratha">Pratha: <span class="item4"></span></li>
+            <li class="list-group-item friedrice">Fried Rice: <span class="item5"></span></li>
+            <li class="list-group-item idli">Idli: <span class="item6"></span></li>
+            <li class="list-group-item dal">Dal: <span class="item7"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="stalls" id="stall4">
+        <div class="card" style="width: 18rem">
+          <h3 class="stallHead heads">Stall 4</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item milk">Milk: <span class="item1"></span></li>
+            <li class="list-group-item lassi">Lassi: <span class="item2"></span></li>
+            <li class="list-group-item roti">Roti: <span class="item3"></span></li>
+            <li class="list-group-item pratha">Pratha: <span class="item4"></span></li>
+            <li class="list-group-item friedrice">Fried Rice: <span class="item5"></span></li>
+            <li class="list-group-item idli">Idli: <span class="item6"></span></li>
+            <li class="list-group-item dal">Dal: <span class="item7"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="stalls" id="stall5">
+        <div class="card" style="width: 18rem">
+          <h3 class="stallHead heads">Stall 5</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item milk">Milk: <span class="item1"></span></li>
+            <li class="list-group-item lassi">Lassi: <span class="item2"></span></li>
+            <li class="list-group-item roti">Roti: <span class="item3"></span></li>
+            <li class="list-group-item pratha">Pratha: <span class="item4"></span></li>
+            <li class="list-group-item friedrice">Fried Rice: <span class="item5"></span></li>
+            <li class="list-group-item idli">Idli: <span class="item6"></span></li>
+            <li class="list-group-item dal">Dal: <span class="item7"></span></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div id="scoreCard">
+      <h4 class="heads">Stomach Points: <span id="stomachPoints"></span></h4>
+      <h4 class="heads">How much broke: <span id="costing"></span></h4>
+    </div>
+    <p style="text-align: center;">Hint: Use 0/1 knapsack approach</p>
+    <a style="text-align: center; display: block;" href="https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/">Maybe read about it</a>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
